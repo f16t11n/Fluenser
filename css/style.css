@@ -70,7 +70,8 @@
     float: right; }
 
 .bottom-menu {
-  border-top: 1px solid #42aeb7; }
+  border-top: 1px solid #42aeb7;
+  font-size: 1.5rem; }
 
 @media only screen and (max-width: 319px) {
   .tab_btn a {
