@@ -1,0 +1,93 @@
+// Inbox Style Css
+
+#inboxSection {
+    font-family: $poppins;
+}
+
+.inbox,
+.requests {
+    color: $secondary-text;
+    letter-spacing: 2px;
+}
+
+.activeborder {
+    border-bottom: 3px solid #42aeb7;
+    font-weight: 600;
+}
+
+.search {
+    position: relative;
+
+    &__input {
+        height: 63px;
+        border-radius: 31.5px;
+        background: $secondary-color;
+        border: none;
+        font-family: 14px;
+        color: $text-color;
+        padding-left: 1.5rem;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 3%;
+        top: 30%;
+        color: $overlay;
+        font-size: 1.5rem;
+    }
+}
+
+// Message style
+
+.message{
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.08);
+
+    &__content{
+        border-bottom: 1.5px solid #cbcbcb;
+        padding-bottom: 10px;
+    }
+    &__content:last-child{
+        border-bottom: none;
+    }
+    img{
+        height:88px;
+        width: 88px;
+    }
+    .activebtn{
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        border:2px solid #fff;
+        background: #5cc842;
+        position: absolute;
+        top: 5px;
+        right: 7px;
+        
+    }
+    .inactivebtn{
+        @extend .activebtn;
+        background: $secondary-text;
+        
+    }
+
+    p {
+        width: 222px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+   }
+   &__status{
+    height: 7px;
+    width: 7px;
+    background-color: #42aeb7;
+    border-radius: 100%;
+    float: right;
+   }
+}
+
+// Bottom menu style
+.bottom-menu{
+    border-top: 1px solid $secondary-text;
+
+}
